@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href=https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css>
+    <link rel="stylesheet" type="text/css" href=https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css
+
+
+
+    >
+
+
+
+    
+</head>
+
+<body>
+
+    <section class="header" id="header">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="#">Rent super Cars</a>
+                </div>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+                
+                <div class="menu">
+                    
+                    <ul>
+                        <li><a href="#" class="activ">Cars</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Production</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <ul>
+                    
+                   <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
+                   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                   <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                
+                    </ul>
+                </div>
+                </div>
+                <div class="hero">
+                    <div class="row">
+                        <div class="left-sec">
+                            <div class="content">
+                                <h2><span>Lamborghini</span><br>Aventador</h2>
+                                <p>Ferruccio Lamborghini was an Italian Industrialist, very well known as the founder of Lamborghini (Automobile) which made high-end sports car. Lamborghini showed early signs of interest in mechanics. He used to fix the tractors as a teenager. He started his first business as tractor manufacturer in 1948. Later on, he entered into different businesses including oil heater and air conditioning.</p>
+
+                    </div>
+                    <button class="discover-btn">
+                        <a href="#">Rent</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+                        
+                    </button>
+                    <div class="information">
+                        <div class="production">
+                            <p>production</p>
+                            <h2>1948</h2>
+                        </div>
+                        <div class="production">
+                            <p>Designer</p>
+                            <h2>Ferruccio </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sec">
+                <div class="my-car">
+                    <div><img src="images/doc7okoxadopidi7hhmcmt.jpeg"></div>
+                    
+                    <div><img src="images/lamborghini-aventador-svj-2018-7.jpg"></div>
+                    <div><img src="images/red_lamborghini-aventador-spyder_2021_4177_main_34c1c616e2e2133169d5f94d1fb71153.jpg"></div>
+                    <div><img src="images/81ae20d05165d4b4.jpg"></div>
+                    <div><img src="images/doc7okoxadopidi7hhmcmt.jpeg"></div>
+                    <div><img src="images/hamann-lamborghini-aventador-roadster-01.jpg"></div>
+                    <div><img src="images/Lamborghini-Revuelto.jpg"></div>
+                    <div><img src="images/red_lamborghini-aventador-spyder_2021_4177_main_34c1c616e2e2133169d5f94d1fb71153.jpg"></div>
+                </div>
+            </div>
+            </div>
+            </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $(".my-car").slick({
+            autoplay:true,
+            dots:true,
+            speed:1000,
+            CustomPaging : function(slider, i) {
+                var thumb = $ (slider.$slider[i]).data();
+                return '<a>'+(i+1)+'</a>';
+            },
+        })
+        });
+    
+    </script>
+</body>
+</html>
